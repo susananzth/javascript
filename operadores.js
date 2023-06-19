@@ -58,7 +58,7 @@ console.log(b); //4
 3 > 5; // false
 
 // Mayor o igual a que
-3 >= 3; // true
+3 >= 3; // truecs
 3 >= 5; // false
 
 // Menor o igual a que
