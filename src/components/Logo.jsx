@@ -1,9 +1,12 @@
-const Logo = props => (
-    <img
-        className="h-8 w-auto"
-        src="../public/logo.png"
-        alt=""
-    />
-)
+import myLogo from '@assets/logo.png'
 
-export default Logo
+export default function Logo({style = 'h-10'}) {
+    return (
+        <img
+            className={`${style} w-auto`}
+            src={myLogo}
+            alt="Logo de SusanaNzth"
+            loading="lazy"
+        />
+    )
+}

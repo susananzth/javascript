@@ -13,8 +13,7 @@ import {
 import {
   ChevronDownIcon,
 } from "@heroicons/react/20/solid";
-import Logo from '../components/Logo.jsx'
-//import { Logo } from '@/components/Logo'
+import Logo from '@components/Logo.jsx'
 
 const products = [
   {

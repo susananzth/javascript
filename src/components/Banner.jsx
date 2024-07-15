@@ -1,6 +1,6 @@
 import ReactDOM from 'react-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faXmark } from '@fortawesome/free-solid-svg-icons'
+import { faArrowRightLong, faXmark } from '@fortawesome/free-solid-svg-icons'
 
 export default function Banner() {
   return (
@@ -17,7 +17,7 @@ export default function Banner() {
           text-white shadow-sm hover:bg-gray-700 focus-visible:outline focus-visible:outline-2 
           focus-visible:outline-offset-2 focus-visible:outline-gray-900"
         >
-          Ver ahora <span aria-hidden="true">&rarr;</span>
+          Ver ahora <FontAwesomeIcon icon={faArrowRightLong} />
         </a>
       </div>
       <div className="flex flex-1 justify-end">
@@ -25,7 +25,6 @@ export default function Banner() {
           type="button"
           className="-m-3 p-3 focus-visible:outline-offset-[-4px]"
         >
-          <span className="sr-only">Cerrar</span>
           <FontAwesomeIcon icon={faXmark} />
         </button>
       </div>
