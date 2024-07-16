@@ -1,5 +1,5 @@
 {
-  "name": "javascript-exercises",
+  "name": "javascript",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -19,6 +19,7 @@
     "@heroicons/react": "^2.1.1",
     "@popperjs/core": "^2.11.8",
     "heroicons": "^2.1.1",
+    "highlight.js": "^11.10.0",
     "react": "^18.2.0",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.23.1"
