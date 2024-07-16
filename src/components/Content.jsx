@@ -2,7 +2,7 @@ import React from "react"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCalendarDay, faHashtag } from '@fortawesome/free-solid-svg-icons'
 
-function Content({ mainTitle, articleTitle, keywords, date, slot }) {
+function Content({ mainTitle, articleTitle, keywords, date, children }) {
   return (
     <>
         <header className="mt-20 bg-white shadow">
@@ -30,7 +30,7 @@ function Content({ mainTitle, articleTitle, keywords, date, slot }) {
                   </div>
                 </div>
 
-                {slot}
+                {children}
               </div>
             </div>
           </div>
