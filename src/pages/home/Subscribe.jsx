@@ -8,30 +8,29 @@ function Subscribe() {
           <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2">
             <div className="max-w-xl lg:max-w-lg">
               <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-                Subscribe to our newsletter.
+                ¡Suscríbete a nuestro boletín informativo!
               </h2>
               <p className="mt-4 text-lg leading-8 text-gray-300">
-                Nostrud amet eu ullamco nisi aute in ad minim nostrud
-                adipisicing velit quis. Duis tempor incididunt dolore.
+                Mantente al día con las últimas tendencias, trucos de programación y tips exclusivos sobre desarrollo de software.
               </p>
               <div className="mt-6 flex max-w-md gap-x-4">
-                <label htmlFor="email-address" className="sr-only">
-                  Email address
+                <label htmlFor="email" className="sr-only">
+                  Correo electrínico
                 </label>
                 <input
-                  id="email-address"
+                  id="email"
                   name="email"
                   type="email"
                   autoComplete="email"
                   required
                   className="min-w-0 flex-auto rounded-md border-0 bg-white/5 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6"
-                  placeholder="Enter your email"
+                  placeholder="Ingresa tu correo"
                 />
                 <button
                   type="submit"
                   className="flex-none rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
                 >
-                  Subscribe
+                  ¡Suscríbete ahora!
                 </button>
               </div>
             </div>
@@ -53,10 +52,9 @@ function Subscribe() {
                     />
                   </svg>
                 </div>
-                <dt className="mt-4 font-semibold text-white">Weekly articles</dt>
+                <dt className="mt-4 font-semibold text-white">Ejemplos semanales</dt>
                 <dd className="mt-2 leading-7 text-gray-400">
-                  Non laboris consequat cupidatat laborum magna. Eiusmod non
-                  irure cupidatat duis commodo amet.
+                  Recibe semanalmente ejemplos de código y soluciones de programación.
                 </dd>
               </div>
               <div className="flex flex-col items-start">
@@ -78,8 +76,7 @@ function Subscribe() {
                 </div>
                 <dt className="mt-4 font-semibold text-white">No spam</dt>
                 <dd className="mt-2 leading-7 text-gray-400">
-                  Officia excepteur ullamco ut sint duis proident non
-                  adipisicing. Voluptate incididunt anim.
+                  No te preocupes, respetamos tu privacidad y no enviamos spam
                 </dd>
               </div>
             </dl>
