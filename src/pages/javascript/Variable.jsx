@@ -8,7 +8,7 @@ function VariableJS() {
   return (
     <Content 
         mainTitle="Javascript"
-        articleTitle="Varibles"
+        articleTitle="Variables"
         keywords="Javascript, Programación básica, Principios de programación"
         date="12/06/2024">
         <Acordeon>

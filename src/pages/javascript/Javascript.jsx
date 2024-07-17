@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCircleCheck } from '@fortawesome/free-solid-svg-icons'
 
-function PHP() {
+function Javascript() {
   return (
     <>
       <div className="bg-white py-24 sm:py-32">
@@ -13,10 +13,10 @@ function PHP() {
               Documentación y anotaciones
             </h2>
             <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              PHP
+              Javascript
             </p>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              Todas las anotaciones de cursos y tutoriales de php.
+              Todas las anotaciones de cursos y tutoriales de Javascript.
             </p>
           </div>
           <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
@@ -26,7 +26,7 @@ function PHP() {
                   <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
                     <FontAwesomeIcon className="h-6 w-6 text-white" icon={faCircleCheck} />
                   </div>
-                  <Link to="/php/variable">Variables</Link>
+                  <Link to="/javascript/variable">Variables</Link>
                 </dt>
               </div>
               <div className="relative pl-16">
@@ -34,7 +34,7 @@ function PHP() {
                   <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
                     <FontAwesomeIcon className="h-6 w-6 text-white" icon={faCircleCheck} />
                   </div>
-                  <Link to="/php/variable">Variables</Link>
+                  <Link to="/javascript/variable">Variables</Link>
                 </dt>
               </div>
             </dl>
@@ -45,4 +45,4 @@ function PHP() {
   )
 }
 
-export default PHP
+export default Javascript

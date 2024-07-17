@@ -53,7 +53,7 @@ function Footer() {
                             disabled:text-black/30 dark:text-neutral-200 dark:hover:text-neutral-400 
                             dark:focus:text-neutral-400 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
             >
-              Blog
+              Documentación
             </a>
           </li>
           <li className="my-4 pl-2 lg:my-0 lg:pl-2 lg:pr-1">

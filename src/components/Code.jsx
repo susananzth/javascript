@@ -1,27 +1,30 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import "highlight.js/styles/atom-one-dark.css";
 import hljs from "highlight.js/lib/core";
 import javascript from "highlight.js/lib/languages/javascript";
 import php from "highlight.js/lib/languages/php";
 
-function Code({ language = "javascript", children }) {
-  switch (language) {
-    case "php":
-      hljs.registerLanguage(language, php);
-      break;
+// Registra los lenguajes una sola vez
+hljs.registerLanguage("javascript", javascript);
+hljs.registerLanguage("php", php);
 
-    case "javascript":
-    default:
-      hljs.registerLanguage(language, javascript);
-      break;
-  }
+function Code({ language = "javascript", children }) {
+  const codeRef = useRef(null);
+
   useEffect(() => {
-    hljs.highlightAll();
-  }, []);
+    if (codeRef.current) {
+      if (!codeRef.current.dataset.highlighted) {
+        hljs.highlightElement(codeRef.current);
+        codeRef.current.dataset.highlighted = "yes";
+      }
+    }
+  }, [children]);
 
   return (
     <pre className="my-1">
-      <code className="rounded">{children}</code>
+      <code ref={codeRef} className={`rounded hljs language-${language}`}>
+        {children}
+      </code>
     </pre>
   );
 }

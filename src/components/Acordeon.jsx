@@ -12,7 +12,7 @@ const Acordeon = ({ children }) => {
   };
 
   return (
-    <div className="w-full max-w-md mx-auto rounded-xl border border-gray-200 dark:border-gray-700">
+    <div className="w-full max-w-4xl mx-auto rounded-xl border border-gray-200 dark:border-gray-700">
       {React.Children.map(children, (child, index) => {
         if (React.isValidElement(child)) {
           return React.cloneElement(child, {
