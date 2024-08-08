@@ -1,10 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import Logo from '@components/Logo'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faX, faArrowRightLong } from '@fortawesome/free-solid-svg-icons'
 
 function Navbar() {
+const [menuVisible, setMenuVisible] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuVisible(!menuVisible);
+  };
+
   return (
     <header className="bg-pink-200/75 absolute inset-x-0 top-0 z-50">
         <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
@@ -15,7 +21,8 @@ function Navbar() {
                 </Link>
             </div>
             <div className="flex lg:hidden">
-                <button type="button" className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+                <button id="btnMenu" type="button" onClick={toggleMenu} 
+                    className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
                     <span className="sr-only">Abrir menú</span>
                     <FontAwesomeIcon className="h-6 w-6" icon={faBars} />
                 </button>
@@ -33,7 +40,7 @@ function Navbar() {
                 </a>
             </div>
         </nav>
-        <div className="lg:hidden" role="dialog" aria-modal="true">
+        <div id="menuMobile" className={`${menuVisible ? '' : 'hidden'}`} role="dialog" aria-modal="true">
             <div className="fixed inset-0 z-50"></div>
             <div className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
                 <div className="flex items-center justify-between">
@@ -41,7 +48,7 @@ function Navbar() {
                         <span className="sr-only">SusanaNzth</span>
                         <Logo style="h-8" />
                     </Link>
-                    <button type="button" className="-m-2.5 rounded-md p-2.5 text-gray-700">
+                    <button type="button" onClick={toggleMenu} className="-m-2.5 rounded-md p-2.5 text-gray-700">
                         <span className="sr-only">Cerrar menú</span>
                         <FontAwesomeIcon className="h-6 w-6" icon={faX} />
                     </button>

@@ -1,6 +1,7 @@
 import React from "react"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHtml5, faCss3Alt, faJs, faPhp, faPython, faRaspberryPi, faDatabase, faReact } from '@fortawesome/free-brands-svg-icons'
+import { faHtml5, faCss3Alt, faJs, faPhp, faPython, faReact } from '@fortawesome/free-brands-svg-icons'
+import { faDatabase, faRobot } from '@fortawesome/free-solid-svg-icons'
 
 function Logos() {
   return (
@@ -23,16 +24,16 @@ function Logos() {
             <div className="col-span-2 max-h-12 w-full text-center object-contain lg:col-span-1">
               <FontAwesomeIcon className="text-5xl" icon={faReact} />
             </div>
-            <div className="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1">
+            <div className="col-span-2 max-h-12 w-full text-center object-contain lg:col-span-1">
               <FontAwesomeIcon className="text-5xl" icon={faPhp} />
             </div>
-            <div className="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1">
+            <div className="col-span-2 max-h-12 w-full text-center object-contain lg:col-span-1">
               <FontAwesomeIcon className="text-5xl" icon={faPython} />
             </div>
-            <div className="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1">
-              <FontAwesomeIcon className="text-5xl" icon={faRaspberryPi} />
+            <div className="col-span-2 max-h-12 w-full text-center object-contain lg:col-span-1">
+              <FontAwesomeIcon className="text-5xl" icon={faRobot} />
             </div>
-            <div className="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1">
+            <div className="col-span-2 max-h-12 w-full text-center object-contain lg:col-span-1">
               <FontAwesomeIcon className="text-5xl" icon={faDatabase} />
             </div>
           </div>
