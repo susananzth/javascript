@@ -1,12 +1,13 @@
-import React from "react"
-import { Link } from 'react-router-dom'
-import Logo from '@components/Logo'
+import React from "react";
+import { Link } from "react-router-dom";
+import Logo from "@components/Logo";
 
 function Footer() {
   return (
     <footer className="flex w-full flex-wrap items-center justify-center lg:justify-between h-20 px-3">
       <div className="flex items-center">
-        <Link to="/"
+        <Link
+          to="/"
           className="mx-2 my-1 text-neutral-900 hover:text-neutral-900 focus:text-neutral-900 lg:mb-0 lg:mt-0"
         >
           <Logo style="h-9 mr-2" />
@@ -82,4 +83,4 @@ function Footer() {
   );
 }
 
-export default Footer
+export default Footer;

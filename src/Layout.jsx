@@ -1,7 +1,7 @@
-import React from 'react'
-import { Outlet } from 'react-router-dom'
-import Navbar from '@partial/Navbar'
-import Footer from '@partial/Footer'
+import React from "react";
+import { Outlet } from "react-router-dom";
+import Navbar from "@partial/Navbar";
+import Footer from "@partial/Footer";
 //import Nav from './partials/Nav'
 //import Banner from './components/Banner'
 //import Header from './partials/Header'
@@ -21,8 +21,8 @@ function Layout() {
       <Nav />
       <Header />
        */}
-      </>
-  )
+    </>
+  );
 }
 
-export default Layout
+export default Layout;

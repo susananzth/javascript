@@ -1,4 +1,4 @@
-import React from "react"
+import React from "react";
 
 function Subscribe() {
   return (
@@ -11,7 +11,8 @@ function Subscribe() {
                 ¡Suscríbete a nuestro boletín informativo!
               </h2>
               <p className="mt-4 text-lg leading-8 text-gray-300">
-                Mantente al día con las últimas tendencias, trucos de programación y tips exclusivos sobre desarrollo de software.
+                Mantente al día con las últimas tendencias, trucos de
+                programación y tips exclusivos sobre desarrollo de software.
               </p>
               <div className="mt-6 flex max-w-md gap-x-4">
                 <label htmlFor="email" className="sr-only">
@@ -52,9 +53,12 @@ function Subscribe() {
                     />
                   </svg>
                 </div>
-                <dt className="mt-4 font-semibold text-white">Ejemplos semanales</dt>
+                <dt className="mt-4 font-semibold text-white">
+                  Ejemplos semanales
+                </dt>
                 <dd className="mt-2 leading-7 text-gray-400">
-                  Recibe semanalmente ejemplos de código y soluciones de programación.
+                  Recibe semanalmente ejemplos de código y soluciones de
+                  programación.
                 </dd>
               </div>
               <div className="flex flex-col items-start">
@@ -86,13 +90,11 @@ function Subscribe() {
           className="absolute left-1/2 top-0 -z-10 -translate-x-1/2 blur-3xl xl:-top-6"
           aria-hidden="true"
         >
-          <div
-            className="aspect-[1155/678] w-[72.1875rem] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30"
-            ></div>
+          <div className="aspect-[1155/678] w-[72.1875rem] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30"></div>
         </div>
       </div>
     </>
-  )
+  );
 }
 
-export default Subscribe
+export default Subscribe;

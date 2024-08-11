@@ -1,12 +1,12 @@
-import React from 'react'
-import { Routes, Route } from 'react-router-dom'
-import Layout from './Layout.jsx'
-import Home from '@pages/home/Home.jsx'
-import Fundaments from '@pages/fundaments/Fundaments.jsx'
-import PHP from '@pages/php/PHP.jsx'
-import Variable from '@pages/php/Variable.jsx'
-import Javascript from '@pages/javascript/Javascript.jsx'
-import VariableJS from '@pages/javascript/Variable.jsx'
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import Layout from "./Layout.jsx";
+import Home from "@pages/home/Home.jsx";
+import Fundaments from "@pages/fundaments/Fundaments.jsx";
+import PHP from "@pages/php/PHP.jsx";
+import Variable from "@pages/php/Variable.jsx";
+import Javascript from "@pages/javascript/Javascript.jsx";
+import VariableJS from "@pages/javascript/Variable.jsx";
 //import './App.css'
 
 function App() {
@@ -23,7 +23,7 @@ function App() {
         </Route>
       </Routes>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
