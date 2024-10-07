@@ -4,7 +4,7 @@ import { faCalendarDay, faHashtag } from '@fortawesome/free-solid-svg-icons'
 
 function Content({ mainTitle, articleTitle, keywords, date, children }) {
   return (
-    <div className="antialiased text-lg">
+    <div className="antialiased">
         <header className="mt-20 shadow">
           <div className="bg-purple-300/75 shadow">
             <div className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
@@ -33,8 +33,8 @@ function Content({ mainTitle, articleTitle, keywords, date, children }) {
         </header>
         <main>
           <div className="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8">
-            <div className="lg:flex lg:items-center lg:justify-between">
-              <div className="min-w-0 flex-1">
+            <div className="rounded-xl border border-gray-200 dark:border-gray-700 lg:flex lg:items-center lg:justify-between">
+              <div className="min-w-0 flex-1 py-6 sm:px-6 lg:px-8">
                 {children}
               </div>
             </div>
