@@ -3,10 +3,12 @@ import "highlight.js/styles/atom-one-dark.css";
 import hljs from "highlight.js/lib/core";
 import javascript from "highlight.js/lib/languages/javascript";
 import php from "highlight.js/lib/languages/php";
+import sql from "highlight.js/lib/languages/sql";
 
 // Registra los lenguajes una sola vez
 hljs.registerLanguage("javascript", javascript);
 hljs.registerLanguage("php", php);
+hljs.registerLanguage("sql", sql);
 
 function Code({ language = "javascript", children }) {
   const codeRef = useRef(null);
