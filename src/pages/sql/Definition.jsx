@@ -24,11 +24,12 @@ function DefinitionSQL() {
             </AcordeonItem>
             <AcordeonItem title="¿Cómo se comunica?">
                 <p>
-                  Se realiza una solicitud (sentencia) SQL al server, éste se comunica con la base de datos y devuelve la consulta.
+                  Se realiza una solicitud (sentencia) SQL al servidor, éste se comunica con la base de datos 
+                  y devuelve la consulta.
                 </p>
                 <p>
-                  Para gestionar la base de datps, se utiliza un gestor de base de datos, estas adoptan el estandar SQL 
-                  para la comunicación aunque cada gestor tiene su 'dialecto' y todos utilizan los estandar ANSI e ISO.
+                  Para gestionar la base de datos, se utiliza un gestor de base de datos, estas adoptan el estándar SQL 
+                  para la comunicación aunque cada gestor tiene su 'dialecto' y todos utilizan los estándar ANSI e ISO.
                 </p>
             </AcordeonItem>
             <AcordeonItem title="Comandos o grupos">
