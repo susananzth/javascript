@@ -32,9 +32,9 @@ function Content({ mainTitle, articleTitle, keywords, date, children }) {
           </div>
         </header>
         <main>
-          <div className="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-7xl py-6 px-4 sm:px-6 lg:px-8">
             <div className="rounded-xl border border-gray-200 dark:border-gray-700 lg:flex lg:items-center lg:justify-between">
-              <div className="min-w-0 flex-1 py-6 sm:px-6 lg:px-8">
+              <div className="min-w-0 flex-1 sm:px-6 lg:px-8">
                 {children}
               </div>
             </div>
