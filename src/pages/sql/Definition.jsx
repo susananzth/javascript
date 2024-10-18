@@ -165,21 +165,31 @@ SELECT DISTINCT paises FROM clientes;`}</Code>
 SELECT nombrearticulo, seccion, precio FROM productos WHERE seccion="CERÁMICA";`}</Code>
                 </li>
                 <li>
-                  <code className="font-mono text-indigo-700">GROUP BY</code>: 
-                  Agrupa los registros que tienen valores idénticos en columnas especificadas 
-                  y se utiliza con funciones de agregación (como `COUNT`, `SUM`, etc.).
-<Code language="sql">{`SELECT columna1, COUNT(*) FROM tabla GROUP BY columna1;`}</Code>
-                </li>
-                <li>
                   <code className="font-mono text-indigo-700">HAVING</code>: 
                   Filtra los resultados después de aplicar `GROUP BY`, permitiendo condiciones en grupos.
-<Code language="sql">{`SELECT columna1, COUNT(*) FROM tabla GROUP BY columna1 HAVING COUNT(*) > 1;`}</Code>
+                  Es un sustituto del WHERE en consultas que tiene un GROUP BY.
+<Code language="sql">{`SELECT columna1, COUNT(*) FROM tabla GROUP BY columna1 HAVING COUNT(*) > 1;
+SELECT sección, precio FROM productos GROUP BY sección HAVING SECCIÓN='deportes' OR sección='CONFECCIÓN';
+-- Utilizado otra cláusula y ordenamiento:
+SELECT sección, AVG(precio) AS media_articulos FROM productos GROUP BY sección HAVING SECCIÓN='deportes' OR sección='CONFECCIÓN' ORDER BY media_articulos;`}</Code>
                 </li>
                 <li>
                   <code className="font-mono text-indigo-700">ORDER BY</code>: 
                   Ordena los resultados de la consulta según una o más columnas, en orden ascendente o descendente.
 <Code language="sql">{`SELECT * FROM tabla ORDER BY columna1 ASC;
-SELECT paises FROM clientes; ORDER BY paises DESC`}</Code>
+SELECT paises FROM clientes; ORDER BY paises DESC;
+SELECT * FROM productos WHERE sección='DEPORTES' OR sección='CERÁMICA' ORDER BY sección DESC;
+
+-- Establecer varios criterios de ordenamiento:
+SELECT * FROM productos WHERE sección='DEPORTES' OR sección='CERÁMICA' ORDER BY sección ASC, precio DESC;
+SELECT * FROM productos WHERE sección='DEPORTES' OR sección='CERÁMICA' ORDER BY sección, paísdeorigen, precio;
+`}</Code>
+                </li>
+                <li>
+                  <code className="font-mono text-indigo-700">AS</code>: 
+                  Se utiliza para renombrar columnas o tablas en los resultados de una consulta.
+<Code language="sql">{`SELECT columna1 AS nuevo_nombre FROM tabla;
+SELECT sección, precio AS total FROM productos;`}</Code>
                 </li>
               </ol>
             </AcordeonItem>
@@ -214,6 +224,76 @@ SELECT * FROM productos WHERE fecha BETWEEN '2000-03-01' AND '2000-04-30';`}</Co
 SELECT * FROM productos WHERE precio < 30;
 SELECT * FROM productos WHERE precio >= 300;
 SELECT * FROM productos WHERE fecha >= '2000-03-01' AND fecha <= '2000-04-30';`}</Code>
+                </li>
+              </ol>
+            </AcordeonItem>
+            <AcordeonItem title="Funciones de agrupación y totales">
+              Estas funciones se realizan sobre grupos de registros.
+              <ol className="list-square *:ms-5 *:pt-2">
+                <li>
+                  <code className="font-mono text-indigo-700">GROUP BY</code>: 
+                  Agrupa los registros que tienen valores idénticos en columnas especificadas 
+                  y se utiliza con funciones de agregación (como `COUNT`, `SUM`, etc.).
+<Code language="sql">{`SELECT columna1, COUNT(*) FROM tabla GROUP BY columna1;
+SELECT sección, precio FROM productos GROUP BY sección;`}</Code>
+                </li>
+                <li>
+                  <code className="font-mono text-indigo-700">AVG</code>: 
+                  Calcula el promedio de un campo.
+<Code language="sql">{`SELECT sección, AVG(precio) AS media_articulos FROM productos GROUP BY sección;
+SELECT sección, AVG(precio) AS media_articulos FROM productos GROUP BY sección HAVING SECCIÓN='deportes' OR sección='CONFECCIÓN' ORDER BY media_articulos;`}</Code>
+                </li>
+                <li>
+                  <code className="font-mono text-indigo-700">COUNT</code>: 
+                  Cuenta los registros de un campo. El COUNT no cuenta campos vacíos.
+                  <Code language="sql">{`SELECT población, COUNT(códigocliente) AS n_clientes FROM clientes GROUP BY población;`}</Code>
+                </li>
+                <li>
+                  <code className="font-mono text-indigo-700">SUM</code>: 
+                  Suma los valores de un campo.
+<Code language="sql">{`SELECT sección, SUM(precio) FROM productos GROUP BY sección;
+-- Ordenando resultados de suma, para ello se tiene que utilizar un alias.
+SELECT sección, sum(precio) AS suma_articulos FROM productos GROUP BY sección ORDER BY suma_articulos;`}</Code>
+                </li>
+                <li>
+                  <code className="font-mono text-indigo-700">MAX</code>: 
+                  Devuelve el máximo de un campo.
+<Code language="sql">{`SELECT sección, MAX(precio) AS max_precio FROM productos WHERE sección='CONFECCIÓN' GROUP BY sección`}</Code>
+                </li>
+                <li>
+                  <code className="font-mono text-indigo-700">MIN</code>: 
+                  Devuelve el mínimo de un campo.
+<Code language="sql">{`SELECT sección, MIN(precio) AS min_precio FROM productos WHERE sección='CONFECCIÓN' GROUP BY sección`}</Code>
+                </li>
+              </ol>
+            </AcordeonItem>
+            <AcordeonItem title="Funciones de cálculo">
+              Estas funciones se realizan sobre registros individuales.
+              <ol className="list-square *:ms-5 *:pt-2">
+                <li>
+                  <code className="font-mono text-indigo-700">Now()</code>: 
+                  Devuelve la fecha y hora actual.
+<Code language="sql">{``}</Code>
+                </li>
+                <li>
+                  <code className="font-mono text-indigo-700">Datediff()</code>: 
+                  Devuelve la diferencia entre dos fechas.
+                  <Code language="sql">{``}</Code>
+                </li>
+                <li>
+                  <code className="font-mono text-indigo-700">Date_format()</code>: 
+                  Formateo de fecha.
+<Code language="sql">{``}</Code>
+                </li>
+                <li>
+                  <code className="font-mono text-indigo-700">Concat()</code>: 
+                  Concatena cadenas de texto.
+<Code language="sql">{``}</Code>
+                </li>
+                <li>
+                  <code className="font-mono text-indigo-700">Round()</code>: 
+                  Redondea números.
+<Code language="sql">{``}</Code>
                 </li>
               </ol>
             </AcordeonItem>
