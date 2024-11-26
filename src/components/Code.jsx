@@ -4,11 +4,13 @@ import hljs from "highlight.js/lib/core";
 import javascript from "highlight.js/lib/languages/javascript";
 import php from "highlight.js/lib/languages/php";
 import sql from "highlight.js/lib/languages/sql";
+import python from "highlight.js/lib/languages/python";
 
 // Registra los lenguajes una sola vez
 hljs.registerLanguage("javascript", javascript);
 hljs.registerLanguage("php", php);
 hljs.registerLanguage("sql", sql);
+hljs.registerLanguage("python", python);
 
 function Code({ language = "javascript", children }) {
   const codeRef = useRef(null);

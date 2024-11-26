@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import Layout from "./Layout.jsx";
 import Home from "@pages/home/Home.jsx";
 import Fundaments from "@pages/fundaments/Fundaments.jsx";
+import DataTypes from "@pages/fundaments/DataTypes.jsx";
 import SQL from "@pages/sql/SQL.jsx";
 import DefinitionSQL from "@pages/sql/Definition.jsx";
 import PHP from "@pages/php/PHP.jsx";
@@ -24,6 +25,7 @@ function App() {
           <Route path="javascript" element={<Javascript />} />
           <Route path="javascript/variable" element={<VariableJS />} />
           <Route path="fundamentos" element={<Fundaments />} />
+          <Route path="fundamentos/tipos_datos" element={<DataTypes />} />
         </Route>
       </Routes>
     </>
