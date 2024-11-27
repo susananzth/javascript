@@ -1,7 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCircleCheck } from "@fortawesome/free-solid-svg-icons";
 
 function PHP() {
   return (
@@ -20,30 +18,48 @@ function PHP() {
             </p>
           </div>
           <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
-            <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
-              <div className="relative pl-16">
-                <dt className="text-base font-semibold leading-7 text-gray-900">
-                  <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
-                    <FontAwesomeIcon
-                      className="h-6 w-6 text-white"
-                      icon={faCircleCheck}
-                    />
-                  </div>
-                  <Link to="/php/variable">Variables</Link>
-                </dt>
-              </div>
-              <div className="relative pl-16">
-                <dt className="text-base font-semibold leading-7 text-gray-900">
-                  <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
-                    <FontAwesomeIcon
-                      className="h-6 w-6 text-white"
-                      icon={faCircleCheck}
-                    />
-                  </div>
-                  <Link to="/php/variable">Variables</Link>
-                </dt>
-              </div>
-            </dl>
+            <h2 className="text-xl font-semibold leading-7">Índice</h2>
+            <ol className="list-disc list-inside">
+              <li>
+                <Link
+                  to="/php/comandos"
+                  className="no-underline hover:underline decoration-indigo-700"
+                >
+                  Comandos
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/php/estructura"
+                  className="no-underline hover:underline decoration-indigo-700"
+                >
+                  Estructura
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/php/variable"
+                  className="no-underline hover:underline decoration-indigo-700"
+                >
+                  Variables
+                </Link>
+              </li>
+            </ol>
+            <h2 className="text-xl font-semibold leading-7 mt-5">
+              Referencias
+            </h2>
+            <ol className="list-disc list-inside">
+              <li>
+                <a
+                  href="https://laracasts.com/series/php-for-beginners-2023-edition"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="no-underline hover:underline decoration-indigo-700"
+                >
+                  PHP for Beginners | Laracast
+                </a>
+              </li>
+            </ol>
           </div>
         </div>
       </div>

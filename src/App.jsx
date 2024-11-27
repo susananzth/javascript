@@ -7,6 +7,8 @@ import DataTypes from "@pages/fundaments/DataTypes.jsx";
 import SQL from "@pages/sql/SQL.jsx";
 import DefinitionSQL from "@pages/sql/Definition.jsx";
 import PHP from "@pages/php/PHP.jsx";
+import Comands from "@pages/php/Comands.jsx";
+import Structure from "@pages/php/Structure.jsx";
 import Variable from "@pages/php/Variable.jsx";
 import Javascript from "@pages/javascript/Javascript.jsx";
 import VariableJS from "@pages/javascript/Variable.jsx";
@@ -21,6 +23,8 @@ function App() {
           <Route path="sql" element={<SQL />} />
           <Route path="sql/definiciones" element={<DefinitionSQL />} />
           <Route path="php" element={<PHP />} />
+          <Route path="php/comandos" element={<Comands />} />
+          <Route path="php/estructura" element={<Structure />} />
           <Route path="php/variable" element={<Variable />} />
           <Route path="javascript" element={<Javascript />} />
           <Route path="javascript/variable" element={<VariableJS />} />
