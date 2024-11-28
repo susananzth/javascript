@@ -19,7 +19,7 @@ function Node() {
           </div>
           <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
             <h2 className="text-xl font-semibold leading-7">Índice</h2>
-            <ol className="list-disc list-inside">
+            <ol className="list-disc *:ms-5 *:pt-2">
               <li>
                 <Link
                   to="/node/comandos"
@@ -32,7 +32,7 @@ function Node() {
             <h2 className="text-xl font-semibold leading-7 mt-5">
               Referencias
             </h2>
-            <ol className="list-disc list-inside">
+            <ol className="list-disc *:ms-5 *:pt-2">
               <li>
                 <a
                   href="https://www.susananzth.com"

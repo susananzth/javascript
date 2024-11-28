@@ -11,7 +11,7 @@ function Comands() {
         keywords="PHP, Programación básica, Principios de programación"
         date="27/11/2024"
       >
-        <ol className="list-disc list-inside">
+        <ol className="list-disc *:ms-5 *:pt-2">
           <li>
             <h4 className="inline font-bold">Mostrar manual</h4>
             <p>Para desplegar la ayuda de <code className="font-mono text-indigo-700">php</code> y 
