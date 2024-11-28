@@ -12,6 +12,8 @@ import Structure from "@pages/php/Structure.jsx";
 import Variable from "@pages/php/Variable.jsx";
 import Javascript from "@pages/javascript/Javascript.jsx";
 import VariableJS from "@pages/javascript/Variable.jsx";
+import Node from "@pages/node/Node.jsx";
+import NodeComands from "@pages/node/Comands.jsx";
 //import './App.css'
 
 function App() {
@@ -30,6 +32,8 @@ function App() {
           <Route path="javascript/variable" element={<VariableJS />} />
           <Route path="fundamentos" element={<Fundaments />} />
           <Route path="fundamentos/tipos_datos" element={<DataTypes />} />
+          <Route path="node" element={<Node />} />
+          <Route path="node/comandos" element={<NodeComands />} />
         </Route>
       </Routes>
     </>
