@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import Acordeon from "@components/Acordeon";
 import AcordeonItem from "@components/AcordeonItem";
 import Code from "@components/Code";
@@ -11,64 +10,16 @@ function VariableJS() {
       mainTitle="Javascript"
       articleTitle="Variables"
       keywords="Javascript, Programación básica, Principios de programación"
-      date="18/10/2024"
+      date="02/12/2024"
     >
-      <h4 className="text-xl font-medium pt-4">Dato</h4>
-      <p>Un dato es un valor que puede ser procesado por un programa.</p>
-
-      <h4 className="text-xl font-medium pt-4 -mb-2">
-        Tipos de datos en Javascript
-      </h4>
-      <ol className="list-square *:ms-5 *:pt-2">
-        <li>
-          <code className="font-mono text-indigo-700">Number</code>: Para
-          números, tanto enteros como decimales.
-        </li>
-        <li>
-          <code className="font-mono text-indigo-700">String</code>: Para texto,
-          delimitado por comillas simples o dobles.
-        </li>
-        <li>
-          <code className="font-mono text-indigo-700">Boolean</code>: Solo puede
-          ser true o false.
-        </li>
-        <li>
-          <code className="font-mono text-indigo-700">Null</code>: Representa la
-          ausencia intencional de un valor.
-        </li>
-        <li>
-          <code className="font-mono text-indigo-700">Undefined</code>: Indica
-          que una variable ha sido declarada pero no asignada.
-        </li>
-        <li>
-          <code className="font-mono text-indigo-700">Object</code>: Estructura
-          de datos compleja, puede contener pares clave-valor.
-        </li>
-        <li>
-          <code className="font-mono text-indigo-700">Symbol</code>: Tipo único
-          y inmutable, principalmente usado como identificadores únicos.
-        </li>
-        <li>
-          <code className="font-mono text-indigo-700">bigint</code>.
-        </li>
-      </ol>
-      <Link
-        to="/fundamentos/tipos_datos"
-        className="no-underline hover:underline decoration-indigo-700"
-      >
-        Ver los tipos de datos.
-      </Link>
-
-      <h4 className="text-xl font-medium pt-4">Información</h4>
-      <p>
-        La información es el resultado de procesar y organizar datos para que
-        sean útiles y significativos.
-      </p>
-
       <h4 className="text-xl font-medium pt-4">Variable</h4>
       <p>
         Una variable es un elemento fundamental en la programación. Piensa en
         una variable como una caja con un nombre, donde puedes guardar un valor.
+      </p>
+      <p>
+        Para nombrar variables hay que tener en cuenta que son <em>case sensitive</em>, por lo que
+        si nombramos una variable como <kbd>MYVAR</kbd> no será lo mismo que <kbd>MyVar</kbd> ni <kbd>myvar</kbd>. 
       </p>
       <h4 className="text-xl font-medium pt-4 -mb-2">
         ¿Por qué son útiles las variables?
@@ -104,21 +55,35 @@ function VariableJS() {
             ser redeclarada y actualizada.
           </p>
           <p>Declaración de la variable</p>
-<Code>{`var nameVar `}</Code>
-          <p>Asignación de la variable</p>
-<Code>{`nameVar = "soy var"`}</Code>
-          <p>Redeclaración de la variable</p>
-<Code>{`var nameVar = "var soy" `}</Code>
-          <p>Reasignación de la variable</p>
-<Code>{`nameVar = "otro var"
-console.log(nameVar) // otro var'`}</Code>
+<Code>{`var unaVariable;
+var otroNombreDeVariable;
+var esteNombreDeVariableEsMuyLargo;`}</Code>
+          <p>Para asignar un valor a una variable, se puede realizar de varias formas:</p>
+<Code>{`var miNumero; // Primero se declara,
+miNumero = 5; // Luego se asigna con el operador '='.
+
+var miNombre = "Susana"; // se declara y se asigna el valor en la misma línea.`}</Code>
+          <p>Con la declaracion de variables utilizando la palabra 
+            <kbd>var</kbd>, podemor reescribir o reasignar
+            el valor de la variable, además que tiene un alcance global (gloabl scope):</p>
+<Code>{`var miVar = 5; // Se declara y asigna el valor '5'
+var miNumero; // Se declara una nueva variable
+miNumero = miVar; // Se asigna el valor de la vieja variable a la nueva.
+console.log([miVar, miNumero]); // Se imprimirá en consola: [5, 5] -> Tipo array
+
+var nombre = "James"; // Se declara y asigna el valor 'James'
+var nombre = "David"; // Se re-declara y asigna el valor 'David'
+console.log(nombre); // // Se imprimirá en consola: 'David' -> tipo String
+// Se imprime el segundo valor asignado ya que se está redeclarando la variable (Borrón y cuenta nueva).`}</Code>
         </AcordeonItem>
 
         <AcordeonItem title="let">
           <p>
-            Tiene un alcance de bloque, lo que significa que solo existe dentro
-            del bloque donde se define. Puede ser actualizada, pero no
-            redeclarada en el mismo alcance.
+            En Junio del 2015, en los ECMAScript 6 (ES6) se añade nueva forma de declarar variable. 
+            Palabra reservada (<em>keywork</em>) <kbd>let</kbd>: este tipo de variable tiene 
+            un alcance local (local scope) lo que significa que solo existe dentro
+            del bloque donde se define y se utiliza para prevenir el error de re-declarar 
+            ya que puede ser actualizada, pero no redeclarada en el mismo alcance.
           </p>
           <p>Declaración de la variable</p>
 <Code>{`let nameLet`}</Code>
@@ -135,8 +100,11 @@ console.log(nameLet) // otro let'`}</Code>
 
         <AcordeonItem title="const" style="rounded-b-xl">
           <p>
-            También tiene un alcance de bloque. Su valor no puede ser cambiado
-            una vez asignado, ni puede ser redeclarada.
+            En Junio del 2015, en los ECMAScript 6 (ES6) se añade nueva forma de declarar variable. 
+            Palabra reservada (<em>keywork</em>) <kbd>conts</kbd>: este tipo de variable tiene 
+            un alcance local (local scope), esta se utiliza para declarar variables de solo lectura. 
+            Esta tiene todas las cualidades que <kbd>let</kbd> con el plus que no se puede cambiar 
+            el valor porque es solo lectura.
           </p>
           <p>Declaración y asignación de la variable</p>
 <Code>{`const nameConst = "soy const"`}</Code>
@@ -146,7 +114,18 @@ console.log(nameLet) // otro let'`}</Code>
 // SyntaxError: Identifier 'nameConst' has already been declared.`}</Code>
           <p>Reasignación de la variable</p>
 <Code>{`nameConst = "otro const"
+// Mostrará un error:
 //TypeError: Assignment to constant variable.`}</Code>
+          <p>
+            Sin embargo, es importante comprender que los objetos (incluyendo arreglos y funciones), 
+            asignados a una variable usando <kbd>const</kbd> siguen siendo mutables. Usar la 
+            declaración <kbd>const</kbd> solo previene la reasignación del identificador de una variable.
+          </p>
+<Code>{`const s = [5, 6, 7]; // Se declara la constante.
+s = [1, 2, 3]; // Da error porque no se puede reasignar una constante por el identificador de la variable.
+s[2] = 45; // El contenido del arreglo, objeto o función si se puede modificar
+console.log(s); // Mostrará: [5, 6, 45]`}
+</Code>
         </AcordeonItem>
       </Acordeon>
 

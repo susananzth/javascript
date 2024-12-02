@@ -22,11 +22,42 @@ function Javascript() {
             <ol className="list-disc *:ms-5 *:pt-2">
               <li>
                 <Link
+                  to="/javascript/tipos_datos"
+                  className="no-underline hover:underline decoration-indigo-700"
+                >
+                  Tipos de datos
+                </Link>
+              </li>
+              <li>
+                <Link
                   to="/javascript/variable"
                   className="no-underline hover:underline decoration-indigo-700"
                 >
                   Variables
                 </Link>
+              </li>
+              <li>
+                <Link
+                  to="/javascript/operadores"
+                  className="no-underline hover:underline decoration-indigo-700"
+                >
+                  Operadores
+                </Link>
+              </li>
+            </ol>
+            <h2 className="text-xl font-semibold leading-7 mt-5">
+              Proyectos
+            </h2>
+            <ol>
+              <li>
+                <a
+                  href="https://github.com/susananzth?tab=repositories"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="no-underline hover:underline decoration-indigo-700"
+                >
+                  FreeCodeCamp | Javascript Algorithms And Data Structures
+                </a>
               </li>
             </ol>
             <h2 className="text-xl font-semibold leading-7 mt-5">
@@ -40,7 +71,34 @@ function Javascript() {
                   rel="noopener noreferrer"
                   className="no-underline hover:underline decoration-indigo-700"
                 >
-                  FreeCodeCamp
+                  <span className="badge text-bg-info">12/2024</span> FreeCodeCamp
+                </a>
+              </li>
+              <li>
+                <a href="https://platzi.com/cursos/ecmascript-6/" 
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="no-underline hover:underline decoration-indigo-700"
+                  >
+                    <span className="badge text-bg-info">09/2023</span> Curso de ECMAScript: Historia y Versiones de JavaScript | Platzi
+                </a>
+              </li>
+              <li>
+                <a href="https://platzi.com/cursos/basico-javascript/" 
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="no-underline hover:underline decoration-indigo-700"
+                  >
+                    <span className="badge text-bg-info">09/2023</span> Curso básico de Javascript | Platzi
+                </a>
+              </li>
+              <li>
+                <a href="https://platzi.com/cursos/pensamiento-logico-estructuras/" 
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="no-underline hover:underline decoration-indigo-700"
+                  >
+                    <span className="badge text-bg-info">09/2023</span> Curso de Pensamiento Lógico: Manejo de Datos, Estructuras y Funciones | Platzi
                 </a>
               </li>
               <li>

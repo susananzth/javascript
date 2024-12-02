@@ -13,6 +13,8 @@ import Structure from "@pages/php/Structure.jsx";
 import Variable from "@pages/php/Variable.jsx";
 import Javascript from "@pages/javascript/Javascript.jsx";
 import VariableJS from "@pages/javascript/Variable.jsx";
+import DataJS from "@pages/javascript/Data.jsx";
+import OperatorsJS from "@pages/javascript/Operators.jsx";
 import Node from "@pages/node/Node.jsx";
 import NodeComands from "@pages/node/Comands.jsx";
 //import './App.css'
@@ -31,6 +33,8 @@ function App() {
           <Route path="php/variable" element={<Variable />} />
           <Route path="javascript" element={<Javascript />} />
           <Route path="javascript/variable" element={<VariableJS />} />
+          <Route path="javascript/tipos_datos" element={<DataJS />} />
+          <Route path="javascript/operadores" element={<OperatorsJS />} />
           <Route path="fundamentos" element={<Fundaments />} />
           <Route path="fundamentos/tipos_datos" element={<DataTypes />} />
           <Route path="fundamentos/estructura_datos" element={<DataEstructure />} />

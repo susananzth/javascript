@@ -13,6 +13,12 @@ function DataTypes() {
       date="26/11/2024"
     >
       <Acordeon>
+        <AcordeonItem title="Boolean" style="rounded-b-xl">
+        <code className="font-mono text-indigo-700">Boolean</code>: Los 
+          tipos de datos booleanos consisten en representar la lógica binaria, únicamente dos valores 1 y 0. 
+            Esta representación binaria puede ser verdadero (`1`) y falso (`0`), 
+            o true y false.
+        </AcordeonItem>
         <AcordeonItem title="Strings" style="rounded-b-xl">
           <p>Contenido de strings</p>
         </AcordeonItem>
