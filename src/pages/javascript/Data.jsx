@@ -11,7 +11,7 @@ function DataJS() {
       mainTitle="Javascript"
       articleTitle="Comentarios y Tipos de Datos"
       keywords="Javascript, Programación básica, Principios de programación"
-      date="02/12/2024"
+      date="13/01/2025"
     >
       <h4 className="text-xl font-medium pt-4">Dato</h4>
       <p>Un dato es un valor que puede ser procesado por un programa.</p>
@@ -65,98 +65,6 @@ console.log(unNumeroSeparado);
 <Code>{`const doubleQuoteStr = "Esto es un texto"; 
 const singleQuoteStr = 'Esto es un texto';
 const conversation = 'Finn exclaims to Jake, "Algebraic!"';`}</Code>
-          <h4 className="font-bold mt-2">Escape de comillas</h4>
-          <p>
-            En algunos casos será necesario utilizar el mismo tipo de comillas con el que se 
-            declara la cadena de texto dentro del mismo texto, para que esto no de error, se utiliza 
-            la siguiente sintaxis para que la comilla sea considerada parte de la cadena de texto 
-            y no sea interpretado como que la cadena llegue a ese punto:
-          </p>
-<Code>{`const sampleStr = "Alan said, \\"Peter is learning JavaScript\\".";
-console.log(sampleStr); // Mostrará: Alan said, "Peter is learning JavaScript".`}</Code>
-          <h4 className="font-bold mt-2">Plantillas literales (plantillas de cadenas) | Template literals</h4>
-          <p>
-            En Junio del 2015, en los ECMAScript 6 (ES6) se añade una forma de 
-            incrustar expresiones en cadena de string utilizando comillas francesas:
-            <Link className="ms-2" to="https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Template_literals">
-              Ver más en documentación de MDN
-            </Link>
-          </p>
-<Code>{`\`texto de cadena de caracteres\`
-\`línea 1 de la cadena de caracteres
-  línea 2 de la cadena de caracteres\`
-
-let saludo = 'Hola';
-let nombre = 'Susana';
-let textoCompleto = \`Este es el saludo: '\${saludo}' para \${nombre}.\`;
-console.log(textoCompleto); // Mostrará: Este es el saludo: 'Hola' para Susana.`}</Code>
-          <h4 className="font-bold mt-2">Escape de otros caracteres</h4>
-          <table>
-            <thead>
-              <tr>
-                <th>Code</th>
-                <th>Output</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><kbd>\'</kbd></td>
-                <td>single quote</td>
-              </tr>
-              <tr>
-                <td><kbd>\"</kbd></td>
-                <td>double quote</td>
-              </tr>
-              <tr>
-                <td><kbd>\\</kbd></td>
-                <td>backslash</td>
-              </tr>
-              <tr>
-                <td><kbd>\n</kbd></td>
-                <td>newline</td>
-              </tr>
-              <tr>
-                <td><kbd>\t</kbd></td>
-                <td>tab</td>
-              </tr>
-              <tr>
-                <td><kbd>\r</kbd></td>
-                <td>carriage return</td>
-              </tr>
-              <tr>
-                <td><kbd>\b</kbd></td>
-                <td>backspace</td>
-              </tr>
-              <tr>
-                <td><kbd>\f</kbd></td>
-                <td>form feed</td>
-              </tr>
-            </tbody>
-          </table>
-          <h4 className="font-bold mt-2">Suma de Strings o Concatenación</h4>
-          <p>
-            En el caso que se desee concatenar o unir mas de una cadena de texto o variable 
-            se utiliza el operador de la suma <kbd>+</kbd> o <kbd>+=</kbd>, sólo que en el caso de que 
-            las variables no sean de tipo numérico <kbd>Number</kbd>, 
-            se unirán más no se sumarán:
-          </p>
-<Code>{`const miSuma = '5' + 10; // Nótese que el 5 es un String.
-console.log(miSuma); // El resultado será 510.
-
-const cadenaTexto = "I come first. " + "I come second.";
-console.log(cadenaTexto); // El resultado: 'I come first. I come second.'.
-
-let cadenaDos = "I come first. ";
-cadenaDos += "I come second.";
-console.log(cadenaDos); // El resultado: 'I come first. I come second.'.
-
-let primerTexto  = "I come first. ";
-let seguntoTexto = "I come second.";
-console.log(primerTexto += seguntoTexto); // El resultado: 'I come first. I come second.'.
-
-const nombre = "freeCodeCamp";
-const texto = "Hello, our name is " + nombre + ", how are you?";
-console.log(texto); // El resultado: 'Hello, our name is freeCodeCamp, how are you?'.`}</Code>
         </AcordeonItem>
         <AcordeonItem title="Boolean">
           <p>

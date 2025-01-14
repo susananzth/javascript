@@ -44,6 +44,30 @@ function Javascript() {
                   Operadores
                 </Link>
               </li>
+              <li>
+                <Link
+                  to="/javascript/operadores_logicos"
+                  className="no-underline hover:underline decoration-indigo-700"
+                >
+                  Operadores lógicos y de comparación
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/javascript/cadenas_de_texto"
+                  className="no-underline hover:underline decoration-indigo-700"
+                >
+                  Cadena de texto | String
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/javascript/arreglos"
+                  className="no-underline hover:underline decoration-indigo-700"
+                >
+                  Arreglos | Array
+                </Link>
+              </li>
             </ol>
             <h2 className="text-xl font-semibold leading-7 mt-5">
               Proyectos
