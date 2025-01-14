@@ -18,6 +18,18 @@ import StringJS from "@pages/javascript/String.jsx";
 import ArrayJS from "@pages/javascript/Array.jsx";
 import OperatorsJS from "@pages/javascript/Operators.jsx";
 import LogicOperatorsJS from "@pages/javascript/LogicOperators.jsx";
+import MathPreUni from "@pages/math/pre_uni/MathPreUni.jsx";
+import Aritmetica from "@pages/math/pre_uni/Aritmetica.jsx";
+import Algebra from "@pages/math/pre_uni/Algebra.jsx";
+import Geometria from "@pages/math/pre_uni/Geometria.jsx";
+import Trigonometria from "@pages/math/pre_uni/Trigonometria.jsx";
+import GeometriaAnalitica from "@pages/math/pre_uni/GeometriaAnalitica.jsx";
+import AlgebraIntermedia from "@pages/math/pre_uni/AlgebraIntermedia.jsx";
+import NumerosComplejos from "@pages/math/pre_uni/NumerosComplejos.jsx";
+import LogaritmosExponentes from "@pages/math/pre_uni/LogaritmosExponentes.jsx";
+import IntroduccionCalculo from "@pages/math/pre_uni/IntroduccionCalculo.jsx";
+import Estadistica from "@pages/math/pre_uni/Estadistica.jsx";
+import MatematicasDiscretas from "@pages/math/pre_uni/MatematicasDiscretas.jsx";
 import Node from "@pages/node/Node.jsx";
 import NodeComands from "@pages/node/Comands.jsx";
 //import './App.css'
