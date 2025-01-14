@@ -44,6 +44,18 @@ function App() {
           <Route path="fundamentos" element={<Fundaments />} />
           <Route path="fundamentos/tipos_datos" element={<DataTypes />} />
           <Route path="fundamentos/estructura_datos" element={<DataEstructure />} />
+          <Route path="math/pre_uni" element={<MathPreUni />} />
+          <Route path="math/pre_uni/aritmetica" element={<Aritmetica />} />
+          <Route path="math/pre_uni/algebra" element={<Algebra />} />
+          <Route path="math/pre_uni/geometria" element={<Geometria />} />
+          <Route path="math/pre_uni/trigonometria" element={<Trigonometria />} />
+          <Route path="math/pre_uni/geometria_analitica" element={<GeometriaAnalitica />} />
+          <Route path="math/pre_uni/algebra_intermedia" element={<AlgebraIntermedia />} />
+          <Route path="math/pre_uni/numeros_complejos" element={<NumerosComplejos />} />
+          <Route path="math/pre_uni/logaritmos_exponentes" element={<LogaritmosExponentes />} />
+          <Route path="math/pre_uni/introduccion_calculo" element={<IntroduccionCalculo />} />
+          <Route path="math/pre_uni/estadistica" element={<Estadistica />} />
+          <Route path="math/pre_uni/matematicas_discretas" element={<MatematicasDiscretas />} />
           <Route path="node" element={<Node />} />
           <Route path="node/comandos" element={<NodeComands />} />
         </Route>
